@@ -5,5 +5,7 @@
 int main()
 {
   float a, b, c, d, r1, r2;
+  printf("hellppppppp");
+  return 0;
   
 }
