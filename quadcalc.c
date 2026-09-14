@@ -4,7 +4,7 @@
 
 int main(void)
 {
-  float a, b, c, d, r1, r2;
+  float a, b, c, d, r1, r2, real, imaginary;
   char o;
   printf("Roots(r) or coefficients(c)?\n");
   scanf("%c", &o);
@@ -18,9 +18,9 @@ int main(void)
     printf("Enter a(x squared) b(x) c\n\n");
     scanf("%f %f %f", &a, &b, &c);
     d = b*b - 4*a*c;
-    printf("%-16s: %.2f\n", "x squared coeff", a);
-    printf("%-16s: %.2f\n", "x coeff", b);
-    printf("%-16s: %.2f\n", "constant", c);    if (d >= 0)
+    printf("%-16s: %f\n", "x squared coeff", a);
+    printf("%-16s: %f\n", "x coeff", b);
+    printf("%-16s: %f\n", "constant", c);    if (d >= 0)
     {
       
       r1 = (-b+sqrt(d))/(2*a);
@@ -45,7 +45,11 @@ int main(void)
       }
     } else if(d < 0)
     {
-      printf("have to fix");
+      real = -b/(2*a);
+      imaginary = sqrt(-d)/(2*a);
+      printf("\nRoots are complex\n\n");
+      printf("1st root is  %.2f + %.2fi\n", real, imaginary);
+      printf("2nd root is  %.2f - %.2fi\n\n", real, imaginary);
     }
     break;
 
