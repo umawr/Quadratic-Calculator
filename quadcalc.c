@@ -32,8 +32,8 @@ int main(void)
     por = r1*r2;
 
     printf("\nx squared %+.2fx %+.2f\n", sor, por);
-    printf("\nSum of roots are %.2f\n", sor);
-    printf("Product of roots are %.2f\n\n", por);
+    printf("\nSum of the roots are %.2f\n", sor);
+    printf("Product of the roots are %.2f\n\n", por);
     
     break;
 
