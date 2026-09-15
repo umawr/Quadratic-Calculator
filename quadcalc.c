@@ -41,9 +41,9 @@ int main(void)
     printf("Enter a(x squared) b(x) c\n\n");
     scanf("%f %f %f", &a, &b, &c);
     d = b*b - 4*a*c;
-    printf("\n%-16s: %f\n", "x squared coeff", a);
-    printf("%-16s: %f\n", "x coeff", b);
-    printf("%-16s: %f\n", "constant", c);    
+    printf("\n%-16s: %.2f\n", "x squared coeff", a);
+    printf("%-16s: %.2f\n", "x coeff", b);
+    printf("%-16s: %.2f\n", "constant", c);    
     if (d >= 0)
     {
       
