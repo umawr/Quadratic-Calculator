@@ -1,3 +1,4 @@
+// this program is imcomplete
 #include<stdio.h>
 #include<math.h>
 
